@@ -1,5 +1,5 @@
 {
-  "name": "microverse-html-css-template",
+  "name": "Portfolio-desktop-version",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sntakirutimana72/microverse-html-css-template.git"
+    "url": "git+https://github.com/sntakirutimana72/Portfolio-desktop-version.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sntakirutimana72/microverse-html-css-template/issues"
+    "url": "https://github.com/sntakirutimana72/Portfolio-desktop-version/issues"
   },
-  "homepage": "https://github.com/sntakirutimana72/microverse-html-css-template#readme",
+  "homepage": "https://github.com/sntakirutimana72/Portfolio-desktop-version#readme",
   "devDependencies": {
     "hint": "^6.1.11",
     "stylelint": "^13.13.1",
