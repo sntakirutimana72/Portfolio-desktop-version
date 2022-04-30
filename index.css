@@ -5,12 +5,18 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: grey;
 }
 
-h2, h3, h5 {
+h2,
+h3,
+h5 {
   margin: 0;
 }
 
@@ -32,6 +38,11 @@ ul {
   margin-top: 48px;
 }
 
+.btn {
+  transition: box-shadow 0.6s;
+  -webkit-transition: box-shadow 0.6s;
+}
+
 .card-btn-wrapper .btn,
 .no-wrap-btn {
   font-weight: 500;
@@ -43,11 +54,6 @@ ul {
   background: #36b37f;
   border: none;
   border-radius: 4px;
-}
-
-.btn {
-  transition: box-shadow 0.6s;
-  -webkit-transition: box-shadow 0.6s;
 }
 
 .menu-btn.btn:hover,
@@ -66,7 +72,7 @@ ul {
   outline: none;
 }
 
-/**************************/
+/*************************   */
 
 /******** main *********/
 
@@ -78,18 +84,17 @@ ul {
   background: #fff;
 }
 
-/*********************/
+/********************   */
 
 /********* Header-Headline ******/
 
 .main-bkg {
   background: url("./static/images/background-desktop.svg");
-  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 187px;
 }
 
-/*******************************/
+/******************************   */
 
 /********* header nav *********/
 
@@ -113,7 +118,7 @@ ul {
   border-radius: 8px;
 }
 
-li.desktop a {
+.desktop a {
   color: #344563;
   font-size: 15px;
 }
@@ -132,10 +137,10 @@ li.desktop a {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
-  color: #28352F;;
+  color: #28352f;
 }
 
-/**************************/
+/*************************   */
 
 /********* Headline *********/
 
@@ -154,7 +159,7 @@ li.desktop a {
   font-size: 48px;
   line-height: 60px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   letter-spacing: 0.37px;
 }
 
@@ -168,7 +173,7 @@ li.desktop a {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .socio-media-list {
@@ -222,17 +227,18 @@ li.desktop a {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
-/**************************/
+/*************************   */
 
 /********* works *********/
 
 .works-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
   max-width: 1171px;
   margin: 0 auto;
-  padding: 84px 8px;
+  padding: 84px 0;
 }
 
 .works-h2 {
@@ -240,7 +246,7 @@ li.desktop a {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .works-container {
@@ -277,7 +283,7 @@ li.desktop a {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .works-card-list {
@@ -292,14 +298,19 @@ li.desktop a {
   font-size: 12px;
   line-height: 16px;
   border-radius: 4px;
-  color: #172B4D;
+  color: #172b4d;
   padding: 8px 10px;
   background: #ebf0ee;
 }
 
-/**************************/
+/*************************   */
 
 /********* about *********/
+
+#about {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
 
 .about-wrapper {
   display: flex;
@@ -315,13 +326,15 @@ li.desktop a {
   flex-wrap: wrap;
   align-items: center;
   gap: 24px;
-  margin: 0 122px;
-  padding-top: 20px;
+  padding: 0 122px;
+  padding-top: 30px;
   background-image:
     url(./static/images/about-1.svg),
     url(./static/images/about-2.svg);
+  background-position:
+    bottom left,
+    top -65px right;
   background-repeat: no-repeat;
-  background-position: top -40px right 0, bottom 0 left 0;
 }
 
 .about-h3 {
@@ -329,12 +342,12 @@ li.desktop a {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .about-description {
   margin: 0;
-  padding: 0 16px;
+  padding: 0 122px;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -343,10 +356,11 @@ li.desktop a {
 }
 
 .about-skills-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
-  padding: 2px 4px;
+  padding: 2px 5px;
 }
 
 .about-card {
@@ -402,13 +416,26 @@ li.desktop a {
   border-radius: 4px;
   padding: 12px;
   letter-spacing: 0.03em;
-  color: #36B37E;
+  color: #36b37e;
   background: #fff;
 }
 
-/**************************/
+/*************************   */
 
 /********* contact *********/
+
+#contact {
+  padding-bottom: 145px;
+  background-image:
+    url(./static/images/contact-1.svg),
+    url(./static/images/contact-2.svg),
+    url(./static/images/contact-3.svg);
+  background-position:
+    bottom left,
+    bottom 80px left 260px,
+    bottom right;
+  background-repeat: no-repeat;
+}
 
 .contact-wrapper {
   display: flex;
@@ -423,26 +450,15 @@ li.desktop a {
   font-weight: 700;
   font-size: 30px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   padding: 50px 0;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
   width: 100%;
-}
-
-.field-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.field-group .field {
-  width: calc(50% - 12px);
 }
 
 .field {
@@ -472,7 +488,7 @@ button[type='submit'] {
   width: 129px;
 }
 
-/**************************/
+/*************************   */
 
 /********* footer *********/
 
@@ -480,7 +496,6 @@ button[type='submit'] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 145px;
   padding: 16px 0;
   border-top: 1px solid orangered;
 }
@@ -491,4 +506,4 @@ button[type='submit'] {
   color: #42526e;
 }
 
-/**************************/
+/*************************   */
