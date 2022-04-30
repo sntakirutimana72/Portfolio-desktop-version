@@ -1,11 +1,5 @@
 /* desktop version */
 
-@media (max-width: 1280px) {
-  .main-bkg {
-    background-size: contain;
-  }
-}
-
 @media (max-width: 1439px) {
   .contact-wrapper {
     padding-left: 20px;
@@ -13,9 +7,9 @@
   }
 }
 
-@media (max-width: 900px) {
-  .contact-h3 {
-    max-width: 360px;
+@media (max-width: 1280px) {
+  .main-bkg {
+    background-size: contain;
   }
 }
 
@@ -24,12 +18,6 @@
     gap: 10px;
   }
 
-  .about-skills-wrapper {
-    gap: 10px;
-  }
-}
-
-@media (max-width: 1144px) {
   .about-skills-wrapper {
     gap: 5px;
   }
@@ -40,9 +28,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
-}
 
-@media (max-width: 1144px) {
   .about-skills-wrapper {
     gap: 24px;
   }
@@ -54,7 +40,11 @@
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 900px) {
+  .contact-h3 {
+    max-width: 360px;
+  }
+
   .about-description {
     padding: 0 80px;
   }
@@ -62,30 +52,12 @@
 
 @media (max-width: 800px) {
   .works-container {
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   .about-skills-wrapper {
     gap: 10px;
-  }
-}
-
-@media (max-width: 781px) {
-  .works-container {
-    gap: 10px;
-  }
-}
-
-@media (max-width: 773px) {
-  .about-skills-wrapper {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 771px) {
-  .works-container {
-    grid-template-columns: 1fr;
-    gap: 24px;
   }
 }
 
@@ -205,10 +177,6 @@
     background: #36b37e;
   }
 
-  .works-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .works-card {
     width: 327px;
   }
@@ -299,13 +267,16 @@
   .mail-address {
     display: inherit;
   }
-
-  /*************************   */
 }
 
-@media (max-width: 379px) {
-  #headline {
-    background-size: auto;
+@media (max-width: 679px) {
+  .works-container {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .about-skills-wrapper {
+    gap: 24px;
   }
 
   .about-description {
@@ -313,32 +284,8 @@
   }
 }
 
-@media (max-width: 714px) {
-  .about-skills-wrapper {
-    gap: 12px;
-  }
-}
-
-@media (max-width: 700px) {
-  .works-container {
-    gap: 10px;
-  }
-
-  .about-skills-wrapper {
-    gap: 10px;
-  }
-}
-
-@media (max-width: 679px) {
-  .works-container {
-    gap: 24px;
-    align-items: stretch;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 677px) {
-  .about-skills-wrapper {
-    gap: 24px;
+@media (max-width: 379px) {
+  #headline {
+    background-size: auto;
   }
 }
