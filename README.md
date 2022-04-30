@@ -2,9 +2,11 @@
 
 # Portfolio: Desktop Version
 
-Portfolio ~ _Desktop version_ is a web-app that talks in details about my background in different
-aspects of life, especially technical expertise and skills. 
-> The project app normally runs on desktop.
+Portfolio ~ is a web-app that talks in details about my background in different
+aspects of life, especially technical expertise and skills. Here you can read about any 
+aspect of my like especially computer programming skills and all technologies I'm familiar with.
+
+> The app normally runs across different devices like desktop & mobile devices.
 
 
 ## Built With
@@ -12,7 +14,11 @@ aspects of life, especially technical expertise and skills.
 - HTML & CSS
 
 
-## Screenshots (if available)
+## Screenshots
+
+### Homepage screenshot
+
+![](./static/images/homepage.png)
 
 
 ## Getting Started
@@ -25,7 +31,7 @@ To get a copy of this project running on your local computer, do the followings:
 
 ### Setup
   - Install _VSCode_ ([link](https://code.visualstudio.com/download))
-  - Clone this project repository on your local computer. ([link](.))
+  - Clone this project repository on your local computer. ([link](../../))
   - Open the project directory with _VSCode_
 
 ### Install
@@ -50,7 +56,7 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
 
 👤 **Steve**
 
-- GitHub: [@github-profile](..)
+- GitHub: [@github-profile](../../../)
 
 ## 🤝 Contributing
 
