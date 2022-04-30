@@ -52,7 +52,6 @@
 
 @media (max-width: 800px) {
   .works-container {
-    grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
 
