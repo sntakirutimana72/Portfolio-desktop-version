@@ -1,0 +1,290 @@
+/* desktop version */
+
+@media (max-width: 1439px) {
+  .contact-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-bkg {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1170px) {
+  .works-container {
+    gap: 10px;
+  }
+
+  .about-skills-wrapper {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 1139px) {
+  .works-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .about-skills-wrapper {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 949px) {
+  .about-description {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-h3 {
+    max-width: 360px;
+  }
+
+  .about-description {
+    padding: 0 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .works-container {
+    gap: 12px;
+  }
+
+  .about-skills-wrapper {
+    gap: 10px;
+  }
+}
+
+/* mobile version */
+
+@media (max-width: 767px) {
+  .main-bkg {
+    background: none;
+    padding: 0;
+  }
+
+  /******** Head navbar ***************/
+
+  .nav-bar {
+    padding: 0 12px;
+  }
+
+  .menu-list-container {
+    justify-content: space-between;
+  }
+
+  .menu-btn {
+    padding: 0 12px;
+  }
+
+  li.desktop {
+    display: none;
+  }
+
+  li.mobile {
+    display: inline-flex;
+  }
+
+  /**********************************   */
+
+  /******** Headline *****************/
+
+  #headline {
+    gap: 58px;
+    background-image: url(../images/background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 24px;
+    padding-top: 64px;
+    padding-bottom: 68px;
+  }
+
+  #h2-primary {
+    color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  #headline-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .socio-media-list {
+    gap: 19px;
+  }
+
+  .socio-media-list-item {
+    padding: 0;
+  }
+
+  .socio-media-list-item[title="Twitter"] {
+    order: -1;
+  }
+
+  .socio-media-list-item[title="Angelist"] {
+    order: 5;
+  }
+
+  .socio-media-list-item[title="GitHub"] {
+    order: 4;
+  }
+
+  .socio-media-list-item img {
+    width: 20px;
+    height: 20px;
+  }
+
+  #colapse-action {
+    height: 48px;
+  }
+
+  .colapse-btn {
+    bottom: 4px;
+  }
+
+  /**************************************   */
+
+  /********* works *********/
+
+  .works-wrapper {
+    gap: 62px;
+    padding: 24px 26px;
+  }
+
+  .works-h2 {
+    position: relative;
+    padding: 0 24px;
+    padding-bottom: 24px;
+  }
+
+  .works-h2 > span {
+    display: inherit;
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: calc(50% - 48px / 2);
+    bottom: 0;
+    background: #36b37e;
+  }
+
+  .works-card {
+    width: 327px;
+  }
+
+  .works-card-body {
+    width: 295px;
+  }
+
+  /********* about *********/
+
+  .about-wrapper {
+    gap: 58px;
+    max-width: unset;
+    margin: 0;
+  }
+
+  .about-head-wrapper {
+    padding: 30px 12px 0 12px;
+    background-image:
+      url(../images/about-3.svg),
+      url(../images/about-4.svg);
+    background-position:
+      bottom left,
+      top -30px right;
+  }
+
+  .about-description {
+    padding: 0 40px;
+  }
+
+  .about-card {
+    width: 327px;
+  }
+
+  .about-card-body {
+    left: 0;
+    width: 327px;
+  }
+
+  .about-card-list {
+    padding: 0 28px;
+  }
+
+  /*************************   */
+
+  /********* contact *********/
+
+  #contact {
+    padding: 0;
+    background: none;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 58px;
+    margin: 0 20px;
+    padding-top: 64px;
+    padding-bottom: 44px;
+    background-image: url(../images/contact-4.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  .contact-h3 {
+    max-width: none;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact-form {
+    align-items: center;
+    max-width: 600px;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  /********* footer *********/
+
+  .footer {
+    border: none;
+    margin-bottom: 40px;
+  }
+
+  .mail-address {
+    display: inherit;
+  }
+}
+
+@media (max-width: 679px) {
+  .works-container {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .about-skills-wrapper {
+    gap: 24px;
+  }
+
+  .about-description {
+    padding: 0;
+  }
+}
+
+@media (max-width: 379px) {
+  #headline {
+    background-size: auto;
+  }
+}
