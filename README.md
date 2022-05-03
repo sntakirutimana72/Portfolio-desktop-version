@@ -5,13 +5,17 @@
 Portfolio ~ is a web-app that talks in details about my background in different
 aspects of life, especially technical expertise and skills. Here you can read about any 
 aspect of my like especially computer programming skills and all technologies I'm familiar with.
-
 > The app normally runs across different devices like desktop & mobile devices.
 
 
 ## Built With
 
 - HTML & CSS
+
+
+## Live Demo
+
+[Online Version Demo](https://sntakirutimana72.github.io/Portfolio-desktop-version/)
 
 
 ## Screenshots
