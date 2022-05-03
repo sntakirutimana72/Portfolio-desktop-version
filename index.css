@@ -51,7 +51,7 @@ ul {
   text-align: center;
   padding: 12px;
   color: #fff;
-  background: #36b37f;
+  background: #05854f;
   border: none;
   border-radius: 4px;
 }
@@ -164,7 +164,7 @@ ul {
 }
 
 #h2-primary > span {
-  color: rgb(37, 221, 114);
+  color: #05854f;
 }
 
 #headline-description {
@@ -416,7 +416,7 @@ ul {
   border-radius: 4px;
   padding: 12px;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: #05854f;
   background: #fff;
 }
 
