@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio: Desktop Version</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="static/css/index.responsive.css">
     </head>
@@ -19,7 +25,7 @@
                                 <a class="h2-logo" href="#" title="logo">Welcome</a>
                             </li>
                             <li class="desktop">
-                                <a class="menu-btn btn" href="#headline">Portfolio</a>
+                                <a class="menu-btn btn" href="#portfolio">Portfolio</a>
                             </li>
 
                             <li class="desktop">
@@ -35,6 +41,22 @@
                         </ul>
                     </nav>
                 </header>
+
+                <section class="menu-wrap hidden">
+                    <div>
+                        <div class="menu-x-btn-wrap">
+                            <button class="menu-x-btn">
+                                <img src="/static/images/x-button.svg" alt="" />
+                            </button>
+                        </div>
+
+                        <ul>
+                            <li><a class="btn" href="#portfolio">Portfolio</a></li>
+                            <li><a class="btn" href="#about"> About</a></li>
+                            <li><a class="btn" href="#contact">Contact </a></li>
+                        </ul>
+                    </div>
+                </section>
 
                 <!-- Intro Section -->
                 <section id="headline">
@@ -97,7 +119,7 @@
             </section>
 
             <!-- Recent works section -->
-            <section class="works main-item">
+            <section class="works main-item" id="portfolio">
                 <div class="works-wrapper">
                     <h3 class="works-h2">
                         My Recent Works<br>
@@ -417,5 +439,7 @@
                 <div class="mail-address hidden">steve.ntakirutimana@email.it</div>
             </section>
         </main>
+
+        <script src="index.js"></script>
     </body>
 </html>

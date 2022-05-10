@@ -1,7 +1,7 @@
 /********* define *********/
 
 * {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
 }
 
@@ -32,6 +32,10 @@ ul {
 
 .hidden {
   display: none;
+}
+
+.no-overflow {
+  overflow: hidden;
 }
 
 .card-btn-wrapper {
@@ -126,6 +130,7 @@ ul {
 #menu-options {
   width: 48px;
   height: 48px;
+  cursor: pointer;
   background-image: url(./static/images/options.svg);
   background-size: 40px;
   background-repeat: no-repeat;
@@ -138,6 +143,65 @@ ul {
   font-size: 20px;
   text-align: center;
   color: #28352f;
+}
+
+.menu-wrap {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #e5e5e5;
+  background-image: url(/static/images/footer-bar.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 10px center;
+}
+
+.menu-wrap > div {
+  background-color: white;
+  height: 90vh;
+  padding: 0 10px;
+  border-radius: 0 0 30px 30px;
+}
+
+.menu-wrap .menu-x-btn-wrap {
+  height: 50px;
+}
+
+.menu-wrap .menu-x-btn {
+  outline: none;
+  background-color: white;
+  border: none;
+  float: right;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.menu-wrap ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 28px;
+}
+
+.menu-wrap li {
+  flex-grow: 1;
+}
+
+.menu-wrap a {
+  color: #3a4a42;
+  width: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.menu-wrap a:hover {
+  color: white;
 }
 
 /*************************   */
