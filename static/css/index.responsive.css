@@ -69,7 +69,7 @@
   }
 
   /******** Head navbar ***************/
-
+  
   .nav-bar {
     padding: 0 12px;
   }
@@ -286,5 +286,11 @@
 @media (max-width: 379px) {
   #headline {
     background-size: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-wrap {
+    display: none;
   }
 }
