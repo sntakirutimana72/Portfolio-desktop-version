@@ -10,7 +10,9 @@ aspect of my like especially computer programming skills and all technologies I'
 
 ## Built With
 
-- HTML & CSS
+- html
+- css
+- JavaScript
 
 
 ## Live Demo
@@ -53,6 +55,10 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
       ```
         npm run lint:style
       ```
+  - For _eslint_ tests, run
+      ```
+        npm run lint:es
+      ```
 
 
 
@@ -60,7 +66,11 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
 
 👤 **Steve**
 
-- GitHub: [@github-profile](../../../)
+- GitHub: [@sntakirutimana72](../../../)
+
+👤 **MOhammed Raad**
+
+- GitHub: [@MoRaad97](https://github.com/MoRaad97)
 
 ## 🤝 Contributing
 
