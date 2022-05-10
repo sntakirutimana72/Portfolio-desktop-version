@@ -182,7 +182,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 28px;
+  padding: 28px;
 }
 
 .menu-wrap li {
@@ -245,11 +245,15 @@ ul {
   justify-content: center;
 }
 
+/* stylelint-disable  no-descending-specificity */
+
 .socio-media-list-item > a {
   display: block;
   width: 24px;
   height: 24px;
 }
+
+/* stylelint-enable  no-descending-specificity */
 
 .socio-media-list-item > a:focus {
   outline: 2px solid rgba(255, 102, 0, 0.4);
