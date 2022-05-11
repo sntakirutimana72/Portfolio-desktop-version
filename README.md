@@ -5,12 +5,15 @@
 Portfolio ~ is a web-app that talks in details about my background in different
 aspects of life, especially technical expertise and skills. Here you can read about any 
 aspect of my like especially computer programming skills and all technologies I'm familiar with.
+
 > The app normally runs across different devices like desktop & mobile devices.
 
 
 ## Built With
 
-- HTML & CSS
+- html
+- css
+- JavaScript
 
 
 ## Live Demo
@@ -53,14 +56,21 @@ Open _Terminal/Shell_ inside your _VSCode_ and run
       ```
         npm run lint:style
       ```
-
+  - For _eslint_ tests, run
+      ```
+        npm run lint:es
+      ```
 
 
 ## Authors
 
 👤 **Steve**
 
-- GitHub: [@github-profile](../../../)
+- GitHub: [@sntakirutimana72](../../../)
+
+👤 **MOhammed Raad**
+
+- GitHub: [@MoRaad97](https://github.com/MoRaad97)
 
 ## 🤝 Contributing
 
