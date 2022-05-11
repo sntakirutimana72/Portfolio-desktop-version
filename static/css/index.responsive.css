@@ -266,6 +266,70 @@
   .mail-address {
     display: inherit;
   }
+
+  /********* details-wizard ***************/
+
+  .details-wizard {
+    max-width: 343px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .details-image {
+    display: none;
+  }
+
+  .details-image-mob {
+    display: inherit;
+  }
+
+  .details-top {
+    position: relative;
+  }
+
+  .details-x {
+    position: absolute;
+    background: none;
+    top: 8px;
+    right: 8px;
+  }
+
+  .details-proj-heading {
+    max-width: 259px;
+  }
+
+  /* stylelint-disable  no-descending-specificity */
+
+  .details-heading-wrap .details-btn {
+    display: none;
+  }
+
+  .details-skill-desk {
+    display: none;
+  }
+
+  .details-skill-mob {
+    display: inherit;
+  }
+
+  .details-para {
+    line-height: 24px;
+  }
+
+  .details-ext-refs {
+    display: inherit;
+    gap: 22px;
+    padding: 0 10px;
+  }
+
+  .details-btn {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 12px 52px 12px 16px;
+    background-position: center right 16px;
+  }
 }
 
 @media (max-width: 679px) {
