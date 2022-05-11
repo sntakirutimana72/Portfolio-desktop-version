@@ -1,12 +1,24 @@
-export function select(identifer) {
+/**
+ *
+ * @param {String} identifer
+ */
+function select(identifer) {
   document.querySelector(identifer);
 }
 
-export function selectAll(identifer) {
+/**
+ *
+ * @param {String} identifer
+ */
+function selectAll(identifer) {
   document.querySelectorAll(identifer);
 }
 
-export function getById(identifer) {
+/**
+ *
+ * @param {String} identifer
+ */
+function getById(identifer) {
   document.getElementById(identifer);
 }
 
@@ -15,10 +27,12 @@ export function getById(identifer) {
  * @param { HTMLElement } element
  * @param { String } attribute
  * @param { String? } value
+ * @return {String?}
  */
-export function attribute(element, attribute, value) {
-  if (!value)
+function attribute(element, attribute, value) {
+  if (!value) {
     return element.getAttribute(attribute);
+  }
 
   element.setAttribute(attribute, value);
 }
@@ -27,10 +41,12 @@ export function attribute(element, attribute, value) {
  *
  * @param { HTMLElement } element
  * @param { String? } value
+ * @return {String?}
  */
-export function text(element, value) {
-  if (!value)
+function text(element, value) {
+  if (!value) {
     return element.textContent;
+  }
 
   element.textContent = value;
 }
@@ -41,6 +57,6 @@ export function text(element, value) {
  * @param { string } className
  * @param { Boolean? } force
  */
-export function toggleClass(element, className, force) {
+function toggleClass(element, className, force) {
   element.classList.toggle(className, force);
 }

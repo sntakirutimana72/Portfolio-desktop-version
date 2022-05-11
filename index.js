@@ -37,8 +37,9 @@ function toggleMobileMenu() {
  * @param {HTMLElement?} element
  */
 function toggleDetailsWizard(element) {
-  if (!element)
+  if (!element) {
     element = select('.details-wizard-wrap');
+  }
 
   toggleOverflow();
   toggleClass(element, 'hidden');
@@ -46,22 +47,23 @@ function toggleDetailsWizard(element) {
 
 function triggerDetailsWizard(evt) {
   evt.preventDefault();
-  // toggleClass(select('header, #portfolio'), 'disabled');
 
   let wizard;
 
-  if (!isWizardLoaded)
+  if (!isWizardLoaded) {
     wizard = loadWizard();
-  else
+  } else {
     wizard = select('.details-wizard-wrap');
+  }
 
   toggleDetailsWizard(wizard);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', (event) => {
-    if (event.target.classList.contains('details-x'))
+    if (event.target.classList.contains('details-x')) {
       toggleDetailsWizard();
+    }
   });
 
   getById('menu-options').addEventListener('click', toggleMobileMenu);
@@ -69,7 +71,9 @@ window.addEventListener('DOMContentLoaded', () => {
   select('.menu-x-btn').addEventListener('click', toggleMobileMenu);
 
   selectAll('.menu-wrap a')
-    .forEach((node) => node.onclick = toggleMobileMenu);
+    .forEach((node) => {
+      node.onclick = toggleMobileMenu;
+    });
 
   selectAll('.card-btn-wrapper a')
     .forEach((button) => button.addEventListener('click', triggerDetailsWizard));
