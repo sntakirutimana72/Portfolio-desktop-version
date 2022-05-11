@@ -3,7 +3,7 @@
  * @param {String} identifer
  */
 function select(identifer) {
-  document.querySelector(identifer);
+  return document.querySelector(identifer);
 }
 
 /**
@@ -11,7 +11,7 @@ function select(identifer) {
  * @param {String} identifer
  */
 function selectAll(identifer) {
-  document.querySelectorAll(identifer);
+  return document.querySelectorAll(identifer);
 }
 
 /**
@@ -19,7 +19,7 @@ function selectAll(identifer) {
  * @param {String} identifer
  */
 function getById(identifer) {
-  document.getElementById(identifer);
+  return document.getElementById(identifer);
 }
 
 /**
