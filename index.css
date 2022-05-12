@@ -557,8 +557,33 @@ main {
   resize: vertical;
 }
 
+.submit-btn-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit-btn-wrapper > div {
+  display: flex;
+  gap: 20px;
+}
+
 button[type='submit'] {
   width: 129px;
+  flex-shrink: 0;
+  max-height: 48px;
+}
+
+.submit-error-logger {
+  background: white;
+  color: rgb(255, 81, 0);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px 5px 5px 34px;
+  background-image: url(static/images/error.png);
+  background-size: 20px;
+  background-position: top 5px left 5px;
+  background-repeat: no-repeat;
 }
 
 /*************************   */
