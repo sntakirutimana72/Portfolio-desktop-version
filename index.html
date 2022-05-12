@@ -118,7 +118,6 @@
                 </section>
             </section>
 
-            <!-- About me section -->
             <section class="main-item" id="about">
                 <div class="about-wrapper">
                     <section>
@@ -212,7 +211,6 @@
                 </div>
             </section>
 
-            <!-- contact section -->
             <section class="main-item" id="contact">
                 <div class="contact-wrapper">
                     <h3 class="contact-h3">
@@ -220,7 +218,8 @@
                         so if you'd like to chat please get in touch.
                     </h3>
 
-                    <form class="contact-form" action="https://formspree.io/f/mayvlerd" method="post">
+                    <form action="https://formspree.io/f/mayvlerd" method="post" class="contact-form">
+
                         <input
                             type="text"
                             class="field"
@@ -244,12 +243,17 @@
                             rows="4"
                             maxlength="500"
                             required></textarea>
-                        <button type="submit" class="no-wrap-btn btn">Get in touch</button>
+                        <div class="submit-btn-wrapper">
+                            <div>
+                                <button type="submit" class="no-wrap-btn btn">Get in touch</button>
+                                <div class="submit-error-logger hidden"></div>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </section>
 
-            <!-- footer -->
             <section class="footer">
                 <div class="socio-media-hub">
                     <ul class="socio-media-list">
