@@ -256,6 +256,10 @@
     width: 100%;
   }
 
+  .submit-btn-wrapper > div {
+    justify-content: center;
+  }
+
   /********* footer *********/
 
   .footer {
