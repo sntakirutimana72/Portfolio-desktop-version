@@ -86,6 +86,13 @@ function triggerDetailsWizard(target) {
   toggleDetailsWizard(wizard);
 }
 
+function onSubmitError(force, error='') {
+  const logger = select('.submit-error-logger');
+
+  text(logger, error);
+  toggleClass(logger, 'hidden', force);
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   loadAllProjects();
 
@@ -98,6 +105,23 @@ window.addEventListener('DOMContentLoaded', () => {
       triggerDetailsWizard(attribute(parent, 'data-target'));
     }
   });
+  
+  selectAll('.field')
+  .forEach((field) => field.addEventListener('focus', () => onSubmitError(true)));
+
+const form = select('.contact-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const emailAddress = form.elements.mail.value;
+
+  if (emailAddress.toLowerCase() !== emailAddress) {
+    return onSubmitError(false, 'Email addresss must be in lowercase');
+  }
+  
+  form.submit();
+});
 
   getById('menu-options').addEventListener('click', toggleMobileMenu);
 
