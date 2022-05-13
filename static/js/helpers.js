@@ -3,7 +3,7 @@ const localStorage = (() => {
   if (storageAPI !== null && 'length' in storageAPI) {
     return storageAPI;
   }
-}) ();
+})();
 
 /**
  *

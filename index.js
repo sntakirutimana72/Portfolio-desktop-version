@@ -99,7 +99,7 @@ function preserveFormData() {
 
     if (formData === null) {
       formData = {
-        [this.name]: this.value
+        [this.name]: this.value,
       };
     } else {
       formData = JSON.parse(formData);
