@@ -29,7 +29,7 @@ function loadAllProjects() {
 
     [project.querySelector('h5').innerHTML] = data.name;
     project.querySelectorAll('li')
-      .forEach((li, index) => text(li, data.technologies[0][index]));
+      .forEach((li, index) => text(li, data.technologies[x][index]));
 
     container.appendChild(project);
   });
@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
   selectAll('.field')
     .forEach((field) => {
       field.addEventListener('change', preserveFormData);
-      field.addEventListener('focus', () => onSubmitError(true));
+      field.addEventListener('focus', onSubmitError(true));
     });
 
   const form = select('.contact-form');
@@ -157,12 +157,12 @@ window.addEventListener('DOMContentLoaded', () => {
     form.submit();
   });
 
-  getById('menu-options').addEventListener('click', toggleMobileMenu);
+  getById('menu-options').addEventListener('click', toggleMobileMenu());
 
-  select('.menu-x-btn').addEventListener('click', toggleMobileMenu);
+  select('.menu-x-btn').addEventListener('click', toggleMobileMenu());
 
   selectAll('.menu-wrap a')
     .forEach((node) => {
-      node.onclick = toggleMobileMenu;
+      node.onclick = toggleMobileMenu();
     });
 });
