@@ -1,3 +1,10 @@
+const localStorage = (() => {
+  const storageAPI = window.localStorage;
+  if (storageAPI !== null && 'length' in storageAPI) {
+    return storageAPI;
+  }
+}) ();
+
 /**
  *
  * @param {String} identifer

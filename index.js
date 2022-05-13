@@ -93,6 +93,36 @@ function onSubmitError(force, error = '') {
   toggleClass(logger, 'hidden', force);
 }
 
+function preserveFormData() {
+  if (localStorage !== null) {
+    let formData = localStorage.getItem(formDataName);
+
+    if (formData === null) {
+      formData = {
+        [this.name]: this.value
+      };
+    } else {
+      formData = JSON.parse(formData);
+      formData[this.name] = this.value;
+    }
+
+    localStorage.setItem(formDataName, JSON.stringify(formData));
+  }
+}
+
+function fillFormFromStorage() {
+  if (localStorage !== null) {
+    let formData = localStorage.getItem(formDataName);
+
+    if (formData !== null) {
+      formData = JSON.parse(formData);
+      Object.entries(formData).forEach(([name, value]) => {
+        select(`form .field[name='${name}']`).value = value;
+      });
+    }
+  }
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   loadAllProjects();
 
@@ -106,8 +136,13 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  fillFormFromStorage();
+
   selectAll('.field')
-    .forEach((field) => field.addEventListener('focus', () => onSubmitError(true)));
+    .forEach((field) => {
+      field.addEventListener('change', preserveFormData);
+      field.addEventListener('focus', () => onSubmitError(true));
+    });
 
   const form = select('.contact-form');
 

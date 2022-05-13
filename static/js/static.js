@@ -305,3 +305,5 @@ const projectsData = [
     source: 'https://github.com/sntakirutimana72/Portfolio-desktop-version',
   },
 ];
+
+const formDataName = 'portfolio-form';
