@@ -2,11 +2,7 @@
 
 # Portfolio: Desktop Version
 
-Portfolio ~ is a web-app that talks in details about my background in different
-aspects of life, especially technical expertise and skills. Here you can read about any 
-aspect of my like especially computer programming skills and all technologies I'm familiar with.
-
-> The app normally runs across different devices like desktop & mobile devices.
+A portfolio page that runs across multiple devices and allows user to display their traits, experiences, skills, and technologies. Built with HTLM, CSS, and JavaScript.
 
 
 ## Built With
