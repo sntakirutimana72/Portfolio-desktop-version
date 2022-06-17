@@ -1,7 +1,7 @@
 {
   "name": "Portfolio-desktop-version",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "description": "A portfolio page that runs across multiple devices and allows user to display their traits, experiences, skills, and technologies. Built with HTLM, CSS, and JavaScript.",
   "main": "index.js",
   "scripts": {
     "lint:hint": "npx hint .",
